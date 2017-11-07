@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+$font-title: Georgia,
+serif;
+$font-text: 'Open Sans',
+sans-serif;
+$color-font-text: #666666;
+$color-font-title: #4D4D4D;
+$color-btn-font: #ffffff;
+$color-bg-tile: #FFF0F0;
+$color-bg: #FFEEE7;
+$color-u: #FF9873;
+$color-btn-primary: #E7603C;
+$color-btn-sec: #2980B9;
+body {
+    font-family: $font-text;
+    font-size: 14px;
+}
+
+.container {
+    // width: 60%;
+    // min-height: 80%;
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    right: 15%;
+    bottom: 10%;
+    width: 70%;
+    -webkit-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    height: 40px;
+    width: 220px;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
+    -moz-box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
+}
+
+.btn-primary {
+    background-color: $color-btn-primary;
+    color: $color-btn-font;
+    &:hover {
+        background-color: darken($color-btn-primary, 5%);
+    }
+}

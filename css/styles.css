@@ -6,18 +6,49 @@ body {
 
 .container {
   position: fixed;
-  top: 10%;
-  left: 15%;
-  right: 15%;
-  bottom: 10%;
-  width: 70%;
+  top: 15%;
+  left: 20%;
+  right: 20%;
+  bottom: 15%;
+  width: 60%;
   -webkit-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 1280px) {
+    .container {
+      width: 100%;
+      left: 0;
+      right: 0; } }
+
+input[type=text],
+[type=password] {
+  margin: 0px 0px 5px 0px;
+  height: 40px;
+  width: 100%;
+  min-width: 220px;
+  border: none;
+  border: none;
+  border-bottom: 0.5px solid #999999;
+  color: #999999; }
+  input[type=text]:focus,
+  [type=password]:focus {
+    outline-color: white;
+    border-bottom: 1.5px solid #666; }
+
+input[type=checkbox] {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+a {
+  color: #666666; }
+  a:visited {
+    color: #333333; }
 
 .btn {
+  margin: 5px 0px 5px 0px;
   height: 40px;
-  width: 220px;
+  width: 100%;
+  min-width: 220px;
   border: none;
   border-radius: 3px;
   -webkit-box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
@@ -29,5 +60,64 @@ body {
   color: #ffffff; }
   .btn-primary:hover {
     background-color: #e44d25; }
+
+.btn-secondary {
+  padding-top: 10px;
+  background-color: #2980B9;
+  color: #ffffff; }
+  .btn-secondary:hover {
+    background-color: #2472a4; }
+  .btn-secondary img {
+    float: left; }
+  .btn-secondary .icon {
+    position: relative;
+    top: -5px;
+    float: left;
+    height: 24px;
+    width: 24px; }
+  .btn-secondary .facebook {
+    background: url("../img/facebook.png") no-repeat; }
+  .btn-secondary .google {
+    background: url("../img/google.png") no-repeat; }
+
+.right {
+  background: url(../img/IMG_2441.jpg) no-repeat left center; }
+
+#new-user {
+  float: right;
+  margin: 15px; }
+
+#form-section {
+  margin: 0 auto;
+  width: 50%;
+  padding: 70px 0;
+  height: 100%; }
+  #form-section input[type=checkbox] {
+    padding-left: 25px; }
+  #form-section p {
+    text-align: center; }
+
+#marketing-section {
+  position: absolute;
+  bottom: 0px;
+  padding: 20px; }
+  #marketing-section p {
+    color: white;
+    margin-top: 0px;
+    font-size: 18px; }
+  #marketing-section .marketing-heading {
+    font-size: 60px;
+    margin-bottom: 0px; }
+
+.column {
+  width: 50%;
+  height: 100%;
+  float: left; }
+  .column .right-pic {
+    height: 100%; }
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+      height: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

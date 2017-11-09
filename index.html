@@ -8,13 +8,28 @@
 
 <body>
     <div class="container">
-        <a href="new.html">Create new account</a>
-        <a href="#"><img src="img/logo.png" /></a>
-        <form>
-            <input type="text" value="Email"> <br />
-            <input type="password" value="Password">
-        </form>
-        <button class="btn btn-primary">Login</button>
+        <div class="column">
+            <a href="new.html" id="new-user">Create new account</a><br />
+            <div id="form-section">
+                <p>
+                    <a href="#"><img src="img/logo.png" /></a>
+                </p>
+                <input type="text" value="Email">
+                <input type="password" value="Password">
+                <input type="checkbox" id="check-remember"><label for="check-remember">Remember me</label>
+                <button class="btn btn-primary">Login</button>
+                <a href="remind.html">Remind me password</a><br />
+                <p>or</p>
+                <button class="btn btn-secondary"><span class="icon facebook"></span>Login with Facebook</button>
+                <button class="btn btn-secondary"><span class="icon google"></span>Login with Google+</button>
+            </div>
+        </div>
+        <div class="column right">
+            <div id="marketing-section">
+                <p class="marketing-heading">Create surveys</p>
+                <p>that will get you all the information you need</p>
+            </div>
+        </div>
     </div>
 </body>
 

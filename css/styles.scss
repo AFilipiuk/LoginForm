@@ -1,172 +1,168 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-//$imgpath: ../img;
-$font-title: Georgia,
-serif;
-$font-text: 'Open Sans',
-sans-serif;
-$color-font-text: #666666;
-$color-font-title: #4D4D4D;
-$color-font-input: #999999;
-$color-btn-font: #ffffff;
-$color-bg-tile: #FFF0F0;
-$color-bg: #FFEEE7;
-$color-u: #FF9873;
-$color-btn-primary: #E7603C;
-$color-btn-sec: #2980B9;
-body {
-    font-family: $font-text;
-    font-size: 14px;
-}
-
-.container {
-    // width: 60%;
-    // min-height: 80%;
-    position: fixed;
-    top: 15%;
-    left: 20%;
-    right: 20%;
-    bottom: 15%;
-    width: 60%;
-    -webkit-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
-    // &:nth-of-type(2) {
-    //     background: url(../img/IMG_2441.jpg) no-repeat left bottom;
-    //     background-color: #000;
-    // }
-    @media screen and (max-width: 1280px) {
+    @import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+    //$imgpath: ../img;
+    $font-title: Georgia,
+    serif;
+    $font-text: 'Open Sans',
+    sans-serif;
+    $color-font-text: #666666;
+    $color-font-title: #4D4D4D;
+    $color-font-input: #999999;
+    $color-btn-font: #ffffff;
+    $color-bg-tile: #FFF0F0;
+    $color-bg: #FFEEE7;
+    $color-u: #FF9873;
+    $color-btn-primary: #E7603C;
+    $color-btn-sec: #2980B9;
+    body {
+        font-family: $font-text;
+        font-size: 14px;
+        @media screen and (max-width: 768px) {
+            background: url("../img/IMG_2431.jpg") no-repeat;
+        }
+    }
+    
+    .container {
+        background-color: white;
+        position: fixed;
+        top: 15%;
+        left: 20%;
+        right: 20%;
+        bottom: 15%;
+        width: 60%;
+        -webkit-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 15px 28px 3px rgba(0, 0, 0, 0.1);
+        @media screen and (max-width: 1280px) {
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+    }
+    
+    input[type=text],
+    [type=password] {
+        margin: 0px 0px 5px 0px;
+        height: 40px;
         width: 100%;
-        left: 0;
-        right: 0;
+        min-width: 220px;
+        border: none;
+        border: none;
+        border-bottom: 0.5px solid $color-font-input;
+        color: $color-font-input;
+        &:focus {
+            outline-color: white;
+            border-bottom: 1.5px solid #666;
+        }
     }
-}
-
-input[type=text],
-[type=password] {
-    margin: 0px 0px 5px 0px;
-    height: 40px;
-    width: 100%;
-    min-width: 220px;
-    border: none;
-    //    padding: 10px 10px;
-    border: none;
-    border-bottom: 0.5px solid $color-font-input;
-    color: $color-font-input;
-    &:focus {
-        //border: none;
-        outline-color: white;
-        border-bottom: 1.5px solid #666;
-    }
-}
-
-input[type=checkbox] {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-a {
-    color: $color-font-text;
-    &:visited {
-        color: darken($color-font-text, 20%);
-    }
-}
-
-.btn {
-    margin: 5px 0px 5px 0px;
-    height: 40px;
-    width: 100%;
-    min-width: 220px;
-    border: none;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
-    -moz-box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
-    box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
-}
-
-.btn-primary {
-    background-color: $color-btn-primary;
-    color: $color-btn-font;
-    &:hover {
-        background-color: darken($color-btn-primary, 5%);
-    }
-}
-
-.btn-secondary {
-    padding-top: 10px;
-    background-color: $color-btn-sec;
-    color: $color-btn-font;
-    &:hover {
-        background-color: darken($color-btn-sec, 5%);
-    }
-    img {
-        float: left;
-    }
-    .icon {
-        position: relative;
-        top: -5px;
-        float: left;
-        height: 24px;
-        width: 24px;
-    }
-    .facebook {
-        background: url("../img/facebook.png") no-repeat;
-    }
-    .google {
-        background: url("../img/google.png") no-repeat;
-    }
-}
-
-.right {
-    background: url(../img/IMG_2441.jpg) no-repeat left center;
-}
-
-#new-user {
-    float: right;
-    margin: 15px;
-}
-
-#form-section {
-    margin: 0 auto;
-    width: 50%;
-    //text-align: center;
-    padding: 70px 0;
-    height: 100%;
+    
     input[type=checkbox] {
-        //float: left;
-        padding-left: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    p {
-        text-align: center;
+    
+    a {
+        color: $color-font-text;
+        &:visited {
+            color: darken($color-font-text, 20%);
+        }
     }
-}
-
-#marketing-section {
-    position: absolute;
-    bottom: 0px;
-    padding: 20px;
-    p {
-        color: white;
-        margin-top: 0px;
-        font-size: 18px;
-    }
-    .marketing-heading {
-        font-size: 60px;
-        margin-bottom: 0px;
-    }
-}
-
-.column {
-    width: 50%;
-    height: 100%;
-    float: left;
-    .right-pic {
-        height: 100%;
-    }
-    @media screen and (max-width: 768px) {
+    
+    .btn {
+        margin: 5px 0px 5px 0px;
+        height: 40px;
         width: 100%;
-        height: auto;
+        min-width: 220px;
+        border: none;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
+        -moz-box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
+        box-shadow: 0px 15px 37px 3px rgba(0, 0, 0, 0.015);
     }
-}
-
-// Max Width: 1280px
+    
+    .btn-primary {
+        background-color: $color-btn-primary;
+        color: $color-btn-font;
+        &:hover {
+            background-color: darken($color-btn-primary, 5%);
+        }
+    }
+    
+    .btn-secondary {
+        padding-top: 10px;
+        background-color: $color-btn-sec;
+        color: $color-btn-font;
+        &:hover {
+            background-color: darken($color-btn-sec, 5%);
+        }
+        img {
+            float: left;
+        }
+        .icon {
+            position: relative;
+            top: -5px;
+            float: left;
+            height: 24px;
+            width: 24px;
+        }
+        .facebook {
+            background: url("../img/facebook.png") no-repeat;
+        }
+        .google {
+            background: url("../img/google.png") no-repeat;
+        }
+    }
+    
+    .right {
+        background: url(../img/IMG_2441.jpg) no-repeat left center;
+    }
+    
+    #new-user {
+        float: right;
+        margin: 15px;
+    }
+    
+    #form-section {
+        margin: 0 auto;
+        width: 50%;
+        padding: 70px 0;
+        height: 100%;
+        input[type=checkbox] {
+            padding-left: 25px;
+        }
+        p {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            color: $color-font-title;
+        }
+    }
+    
+    #marketing-section {
+        position: absolute;
+        bottom: 0px;
+        padding: 20px;
+        p {
+            color: white;
+            margin-top: 0px;
+            font-size: 18px;
+        }
+        .marketing-heading {
+            font-size: 60px;
+            margin-bottom: 0px;
+        }
+    }
+    
+    .column {
+        width: 50%;
+        height: 100%;
+        float: left;
+        .right-pic {
+            height: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            height: auto;
+        }
+    }
